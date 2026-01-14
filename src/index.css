@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- Bảng màu chuyên dụng cho Task Management --- */
+
+  /* Màu chủ đạo (Primary): Xanh dương đậm hiện đại */
+  --color-brand-50: #eff6ff;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+
+  /* Màu nền & Bề mặt (Background & Surfaces) */
+  --color-app-bg: #f8fafc; /* Nền chính của web */
+  --color-app-card: #ffffff; /* Nền cho các thẻ task */
+  --color-app-border: #e2e8f0; /* Màu viền chia tách các cột/task */
+
+  /* Màu văn bản (Text) */
+  --color-text-main: #1e293b; /* Tiêu đề, nội dung chính */
+  --color-text-muted: #64748b; /* Mô tả phụ, ngày tháng */
+
+  /* Màu trạng thái Task (Status Colors) */
+  --color-task-todo: #64748b; /* Xám cho việc cần làm */
+  --color-task-doing: #f59e0b; /* Vàng/Cam cho việc đang làm */
+  --color-task-done: #10b981; /* Xanh lá cho việc hoàn thành */
+  --color-task-urgent: #ef4444; /* Đỏ cho việc khẩn cấp */
+
+  /* --- Kích thước & Border Radius tùy chỉnh --- */
+  --radius-task-card: 12px;
+  --radius-app-button: 8px;
+
+  --spacing-sidebar: 280px;
+}
+
+/* Tối ưu hóa mặc định cho Light Mode */
+@layer base {
+  body {
+    @apply bg-app-bg text-text-main antialiased;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  /* Scrollbar mượt mà cho danh sách task */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full;
+  }
+}
