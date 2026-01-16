@@ -10,29 +10,46 @@
   --color-brand-700: #1d4ed8;
 
   /* Màu nền & Bề mặt (Background & Surfaces) */
-  --color-app-bg: #f8fafc; /* Nền chính của web */
-  --color-app-card: #ffffff; /* Nền cho các thẻ task */
-  --color-app-border: #e2e8f0; /* Màu viền chia tách các cột/task */
+  --color-app-bg: #f8fafc;
+  /* Nền chính của web */
+  --color-app-card: #ffffff;
+  /* Nền cho các thẻ task */
+  --color-app-border: #e2e8f0;
+  /* Màu viền chia tách các cột/task */
 
   /* Màu văn bản (Text) */
-  --color-text-main: #1e293b; /* Tiêu đề, nội dung chính */
-  --color-text-muted: #64748b; /* Mô tả phụ, ngày tháng */
+  --color-text-main: #1e293b;
+  /* Tiêu đề, nội dung chính */
+  --color-text-muted: #64748b;
+  /* Mô tả phụ, ngày tháng */
 
   /* Màu trạng thái Task (Status Colors) */
-  --color-task-todo: #64748b; /* Xám cho việc cần làm */
-  --color-task-doing: #f59e0b; /* Vàng/Cam cho việc đang làm */
-  --color-task-done: #10b981; /* Xanh lá cho việc hoàn thành */
-  --color-task-urgent: #ef4444; /* Đỏ cho việc khẩn cấp */
+  --color-task-todo: #64748b;
+  /* Xám cho việc cần làm */
+  --color-task-doing: #f59e0b;
+  /* Vàng/Cam cho việc đang làm */
+  --color-task-done: #10b981;
+  /* Xanh lá cho việc hoàn thành */
+  --color-task-urgent: #ef4444;
+  /* Đỏ cho việc khẩn cấp */
 
   /* --- Kích thước Text (Typography) --- */
-  --font-size-xs: 0.75rem; /* 12px - Text rất nhỏ (tags, badges) */
-  --font-size-sm: 0.875rem; /* 14px - Text phụ (descriptions, metadata) */
-  --font-size-base: 1rem; /* 16px - Text nội dung chính */
-  --font-size-lg: 1.125rem; /* 18px - Text nhấn mạnh */
-  --font-size-xl: 1.25rem; /* 20px - Tiêu đề nhỏ */
-  --font-size-2xl: 1.5rem; /* 24px - Tiêu đề vừa */
-  --font-size-3xl: 1.875rem; /* 30px - Tiêu đề lớn */
-  --font-size-4xl: 2.25rem; /* 36px - Tiêu đề rất lớn */
+  --font-size-xs: 0.75rem;
+  /* 12px - Text rất nhỏ (tags, badges) */
+  --font-size-sm: 0.875rem;
+  /* 14px - Text phụ (descriptions, metadata) */
+  --font-size-base: 1rem;
+  /* 16px - Text nội dung chính */
+  --font-size-lg: 1.125rem;
+  /* 18px - Text nhấn mạnh */
+  --font-size-xl: 1.25rem;
+  /* 20px - Tiêu đề nhỏ */
+  --font-size-2xl: 1.5rem;
+  /* 24px - Tiêu đề vừa */
+  --font-size-3xl: 1.875rem;
+  /* 30px - Tiêu đề lớn */
+  --font-size-4xl: 2.25rem;
+  /* 36px - Tiêu đề rất lớn */
 
   /* Line Heights */
   --line-height-tight: 1.25;
@@ -63,6 +80,7 @@
   ::-webkit-scrollbar {
     width: 6px;
   }
+
   ::-webkit-scrollbar-thumb {
     @apply bg-slate-300 rounded-full;
   }
