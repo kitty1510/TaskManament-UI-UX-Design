@@ -7,7 +7,7 @@ const MainLayout = () => {
       <SideBar />
 
       {/* Content Area */}
-      <div className="w-full h-full overflow-y-auto pl-14 md:pl-0 transition-all duration-300">
+      <div className="w-full h-full overflow-y-auto pl-14 md:pl-0 transition-all duration-300 page-enter">
         <Outlet />
       </div>
     </div>
