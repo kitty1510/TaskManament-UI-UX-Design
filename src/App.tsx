@@ -7,6 +7,7 @@ import NotFoundPage from "./pages/NotFound.tsx";
 import MySchedulePage from "./pages/MySchedulePage.tsx";
 import "./App.css";
 import NotesWiki from "./pages/NotesWiki.tsx";
+import KanbanBoardPage from "./pages/KanbanBoardPage.tsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<MySchedulePage />} />
           <Route path="/notes" element={<NotesWiki />} />
+          <Route path="/kanban" element={<KanbanBoardPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
