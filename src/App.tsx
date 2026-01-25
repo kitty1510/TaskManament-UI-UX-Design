@@ -5,6 +5,7 @@ import MainLayout from "./components/layout/MainLayout.tsx";
 import LoginPage from "./pages/LoginPage.tsx";
 import NotFoundPage from "./pages/NotFound.tsx";
 import MySchedulePage from "./pages/MySchedulePage.tsx";
+import ProjectProgressPage from "./pages/ProjectProgressPage.tsx";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ function App() {
         {/* Route này đóng vai trò là Wrapper, không có path riêng */}
         <Route element={<MainLayout />}>
           <Route path="/" element={<MySchedulePage />} />
+          <Route path="/project-progress" element={<ProjectProgressPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
@@ -27,3 +29,4 @@ function App() {
 }
 
 export default App;
+
