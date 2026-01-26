@@ -38,7 +38,7 @@ const SideBar = ({
 
   return (
     <>
-      {}
+      { }
       {!isCollapsed && (
         <div
           className="fixed inset-0 bg-black/50 z-40 md:hidden transition-opacity"
@@ -63,11 +63,11 @@ const SideBar = ({
       >
         {/* --- HEADER --- */}
         <div
-          className={`flex items-center p-4 ${
-            isCollapsed ? "justify-center" : "justify-between"
-          }`}
+          className={`flex items-center p-4 ${isCollapsed ? "justify-center" : "justify-between"
+            }`}
         >
           {!isCollapsed && (
+            <h2 className="font-bold text-2xl text-text-main">Management Project</h2>
             <h2 className="font-bold text-2xl text-text-main">{title}</h2>
           )}
           <button
@@ -97,10 +97,9 @@ const SideBar = ({
                     className={`
                       flex items-center py-2 rounded-lg transition-colors
                       ${isCollapsed ? "justify-center px-0" : "px-4 gap-3"}
-                      ${
-                        isActive
-                          ? "bg-brand-500 text-white"
-                          : "text-text-muted hover:bg-brand-50 hover:text-brand-600"
+                      ${isActive
+                        ? "bg-brand-500 text-white"
+                        : "text-text-muted hover:bg-brand-50 hover:text-brand-600"
                       }
                     `}
                     title={isCollapsed ? item.label : ""}
@@ -123,9 +122,8 @@ const SideBar = ({
         {/* --- FOOTER --- */}
         <div className="px-2 py-4">
           <div
-            className={`flex items-center ${
-              isCollapsed ? "justify-center px-0" : "px-4 gap-3"
-            }`}
+            className={`flex items-center ${isCollapsed ? "justify-center px-0" : "px-4 gap-3"
+              }`}
             onClick={() => navigate("/doctor-profile")}
             style={{ cursor: "pointer" }}
           >
