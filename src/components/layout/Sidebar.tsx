@@ -7,9 +7,13 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 interface SideBarProps {
   navigationItems?: NavigationItem[];
+  title?: string;
 }
 
-const SideBar = ({ navigationItems = navData }: SideBarProps) => {
+const SideBar = ({
+  navigationItems = navData,
+  title = "Tasktin",
+}: SideBarProps) => {
   const user = { username: "Username" };
   const location = useLocation();
   const navigate = useNavigate();
@@ -64,6 +68,7 @@ const SideBar = ({ navigationItems = navData }: SideBarProps) => {
         >
           {!isCollapsed && (
             <h2 className="font-bold text-2xl text-text-main">Management Project</h2>
+            <h2 className="font-bold text-2xl text-text-main">{title}</h2>
           )}
           <button
             onClick={() => setIsCollapsed(!isCollapsed)}

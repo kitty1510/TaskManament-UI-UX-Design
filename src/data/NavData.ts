@@ -1,7 +1,7 @@
 import { type NavigationItem } from "./../types/index.ts";
 
-import { AiOutlineSchedule } from "react-icons/ai";
 import { MdOutlineAssessment } from "react-icons/md";
+import { AiOutlineSchedule, AiOutlineFileText } from "react-icons/ai";
 
 import React from "react";
 
@@ -21,4 +21,10 @@ export const navData: NavigationItem[] = [
     path: "/groups",
     icon: React.createElement(AiOutlineSchedule),
   },
+  {
+    path: "/notes",
+    label: "Notes & Wiki",
+    icon: React.createElement(AiOutlineFileText),
+  },
+   
 ];
